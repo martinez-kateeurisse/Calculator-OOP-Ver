@@ -23,5 +23,8 @@ class Calculator():
         #Return result
         return result     
     #If division
+    def multiply(self, num1, num2):
         #Perform operation
+        result = num1 / num2
         #Return result
+        return result
