@@ -4,4 +4,6 @@
 class UserInterface:    
 #Create objects
     def user_input(self):
-#Create instance variables
+        #Create instance variables
+        operation = input("Please enter the operation: ")
+        return operation
