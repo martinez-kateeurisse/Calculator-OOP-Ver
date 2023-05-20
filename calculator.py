@@ -4,27 +4,30 @@
 class Calculator():
     #Create objects
     #Create variable instances
+    def calculations (self, operation, num1, num2):
     #If addition
-    def add(self, num1, num2):
+        if operation == "addition":
         #Perform operation
-        result = num1 + num2
+            result = num1 + num2
         #Return result
-        return result
+            return result
     #If subtraction
-    def subtract(self, num1, num2):
+        if operation == "subtraction":
         #Perform operation
-        result = num1 - num2
+            result = num1 - num2
         #Return result
-        return result     
+            return result     
     #If multiplication
-    def multiply(self, num1, num2):
+        if operation == "multiplication":
         #Perform operation
-        result = num1 * num2
+            result = num1 * num2
         #Return result
-        return result     
+            return result     
     #If division
-    def multiply(self, num1, num2):
+        if operation == "division":
         #Perform operation
-        result = num1 / num2
+            result = num1 / num2
         #Return result
-        return result
+            return result
+
+

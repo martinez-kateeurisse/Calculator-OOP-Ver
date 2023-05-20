@@ -16,6 +16,11 @@ class UserInterface:
         num = float(input("Please input the first number: "))
         #Return the value
         return num
+    
+    #Display Results
+    def display_result(self, result):
+        print(result)
+        
     #Retry
         #Ask users if they want to try again
         #Return the value
