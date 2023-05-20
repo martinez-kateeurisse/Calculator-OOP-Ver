@@ -4,7 +4,14 @@
 #The program will use exception handling (try-catch method) to handle user input errors.
 #The program will be executed in an Object oriented programming way 
 
+#Import class files
+from user_interface import UserInterface
+
+#Initialize variable
+ui = UserInterface
+
 #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
+
 #Ask the user for two numbers
 #Display the result
 #Ask if the user wants to try again or not.
