@@ -12,22 +12,20 @@ class Calculator():
         #Return result
             return result
     #If subtraction
-        if operation == "subtraction":
+        elif operation == "subtraction":
         #Perform operation
             result = num1 - num2
         #Return result
             return result     
     #If multiplication
-        if operation == "multiplication":
+        elif operation == "multiplication":
         #Perform operation
             result = num1 * num2
         #Return result
             return result     
     #If division
-        if operation == "division":
+        elif operation == "division":
         #Perform operation
             result = num1 / num2
         #Return result
             return result
-
-

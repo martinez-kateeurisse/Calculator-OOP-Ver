@@ -10,7 +10,7 @@ from calculator import Calculator
 
 #Initialize variable
 ui = UserInterface()
-
+calc = Calculator()
 #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
 operation = ui.operation_input() 
 #Ask the user for two numbers
@@ -19,6 +19,8 @@ num2 = ui.num_input()
 
 #Perform the operation chosen with the two numbers
 #Display the result
+
+ui.display_result()
 #Ask if the user wants to try again or not.
 #If yes, repeat Step 1.
 #If no, Display “Thank you!” and the program will exit 
