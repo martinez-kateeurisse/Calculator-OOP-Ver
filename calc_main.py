@@ -15,6 +15,8 @@ operation = ui.operation_input()
 #Ask the user for two numbers
 num1 = ui.num_input()
 num2 = ui.num_input()
+
+#Perform the operation chosen with the two numbers
 #Display the result
 #Ask if the user wants to try again or not.
 #If yes, repeat Step 1.
