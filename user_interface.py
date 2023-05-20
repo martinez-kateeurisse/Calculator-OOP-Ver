@@ -3,7 +3,13 @@
 #Create class
 class UserInterface:    
 #Create objects
-    def user_input(self):
+    #Operation 
+    def operation_input(self):
         #Create instance variables
+        #Ask user for Operation
         operation = input("Please enter the operation: ")
         return operation
+    #Numbers
+        #Ask user for numbers
+    #Retry
+        #Ask users if they want to try again
