@@ -11,8 +11,11 @@ class Calculator():
         #Return result
         return result
     #If subtraction
+    def subtract(self, num1, num2):
         #Perform operation
-        #Return result     
+        result = num1 - num2
+        #Return result
+        return result     
     #If multiplication
         #Perform operation
         #Return result
