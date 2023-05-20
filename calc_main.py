@@ -6,6 +6,7 @@
 
 #Import class files
 from user_interface import UserInterface
+from calculator import Calculator
 
 #Initialize variable
 ui = UserInterface()
