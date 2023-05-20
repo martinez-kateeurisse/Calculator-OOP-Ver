@@ -11,8 +11,10 @@ from user_interface import UserInterface
 ui = UserInterface()
 
 #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
-operation = ui.user_input()
+operation = ui.operation_input() 
 #Ask the user for two numbers
+num1 = ui.num_input()
+num2 = ui.num_input()
 #Display the result
 #Ask if the user wants to try again or not.
 #If yes, repeat Step 1.
