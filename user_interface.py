@@ -1,0 +1,1 @@
+#This class file will include the codes that require a user interface.
