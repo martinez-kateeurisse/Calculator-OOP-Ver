@@ -20,6 +20,9 @@ class UserInterface:
     #Display Results
     def display_result(self, result):
         print(result)
+    
     #Retry
         #Ask users if they want to try again
+        retry = input("Do you want to try again?(Enter 'y' if yes and any key if no) ")
         #Return the value
+        return retry
