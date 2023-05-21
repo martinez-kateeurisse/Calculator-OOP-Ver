@@ -16,13 +16,13 @@ class Calculator():
         #Perform operation
             result = num1 - num2
         #Return result
-            return result     
+            return result    
     #If multiplication
         elif operation == "multiplication":
         #Perform operation
             result = num1 * num2
         #Return result
-            return result     
+            return result  
     #If division
         elif operation == "division":
         #Perform operation

@@ -18,9 +18,10 @@ num1 = ui.num_input()
 num2 = ui.num_input()
 
 #Perform the operation chosen with the two numbers
+result = calc.calculations(operation, num1, num2)
 #Display the result
+ui.display_result(result)
 
-ui.display_result()
 #Ask if the user wants to try again or not.
 #If yes, repeat Step 1.
 #If no, Display “Thank you!” and the program will exit 

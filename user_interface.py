@@ -20,7 +20,6 @@ class UserInterface:
     #Display Results
     def display_result(self, result):
         print(result)
-        
     #Retry
         #Ask users if they want to try again
         #Return the value
