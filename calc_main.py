@@ -21,8 +21,9 @@ while loop.retry_prog(retry):
     try: 
         #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
         operation = ui.operation_input() 
-        exception.raise_error(errors)
-        #Ask the user for two numbers
+        exception.raise_error(operation)
+        
+        #Ask the user for two numbersa
         num1 = ui.num_input()
         num2 = ui.num_input()
 
