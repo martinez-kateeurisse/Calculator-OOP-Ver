@@ -10,18 +10,20 @@ from calculator import Calculator
 from loop_condition import LoopCondition
 from exception_file import Exceptions
 
-#Initialize variables
+#Initialize variables(modules)
 ui = UserInterface()
 calc = Calculator()
 loop = LoopCondition()
 exception = Exceptions()
 
-#Initialize 
-#retry = 'y'
-while loop.retry_prog(): 
+#Show operation instructions
+ui.show_instructions()
+#Initialize retrying variable
+retry = 'y'
+while loop.retry_prog(retry): 
+    #Try function to test the block of codes
     try: 
-        ui.show_instructions()
-        #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
+        #Ask the user to choose one of the four math operations
         operation = ui.operation_input() 
         exception.raise_error(operation)
         
@@ -34,11 +36,13 @@ while loop.retry_prog():
 
         #Display the result
         ui.display_result(result)
-
+        
         #Ask if the user wants to try again or not.
         retry = ui.retry_option()
-#If yes, repeat Step 1.
-#If no, Display “Thank you!” and the program will exit 
-#Use Python Function and appropriate Exceptions to capture errors during runtime.
+        #If yes, repeat Step 1.
+        #If no, Display “Thank you!” and the program will exit 
+
+    #Except function to handle errors
     except Exception as errors:
         exception.except_condition(errors)
+    break

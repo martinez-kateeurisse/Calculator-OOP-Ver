@@ -5,7 +5,6 @@ class LoopCondition:
 #Create Object
     def retry_prog(self, retry):
     #Create variable instances(if-else condition)
-        retry = 'y'
         if retry == 'y':        
     #Return value
             return retry
