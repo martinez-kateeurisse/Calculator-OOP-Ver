@@ -8,11 +8,13 @@
 from user_interface import UserInterface
 from calculator import Calculator
 from loop_condition import LoopCondition
+from exception_file import Exceptions
 
 #Initialize variables
 ui = UserInterface()
 calc = Calculator()
 loop = LoopCondition()
+exception = Exceptions()
 
 retry = 'y'
 while loop.retry_prog(retry): 
