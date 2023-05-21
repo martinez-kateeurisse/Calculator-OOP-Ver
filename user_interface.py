@@ -13,7 +13,7 @@ class UserInterface:
     #Numbers
     def num_input(self):
         #Ask user for numbers
-        num = float(input("Please input the first number: "))
+        num = float(input("Please input a number: "))
         #Return the value
         return num
     
