@@ -1,10 +1,7 @@
-#This python file will serve as the execution file of the program version executed through tkinter.
+#This python file will have the methods relating to program's tkinter execution.
 
-#Import class files
-from calc_main import MainCalculator
-
-#Initialize classes
-main_calc = MainCalculator
-
-#Call object
-main_calc.main_calculator()
+#Creeate Window
+#Create Labels
+#Create Input Fields
+#Create Buttons
+#Organize the buttons
