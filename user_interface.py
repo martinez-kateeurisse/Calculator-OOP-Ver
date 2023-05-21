@@ -22,6 +22,7 @@ class UserInterface:
         print(result)
     
     #Retry
+    def retry_option(self, retry):
         #Ask users if they want to try again
         retry = input("Do you want to try again?(Enter 'y' if yes and any key if no) ")
         #Return the value
