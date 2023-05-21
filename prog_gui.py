@@ -7,8 +7,7 @@ class tk_methods:
         calc_window = tk.Tk()
         calc_window.title("Simple App Calculator") #Window Title
         calc_window.geometry("400x300") #Window Size
-        calc_window.configure(bg="light cyan") #Window background
-#Create Labels
+        calc_window.configure(bg="light cyan") #Window background#Create Labels
     #Ask the user to enter the operation
         label_operator = tk.Label(calc_window, text="Operations (+, -, *, /):")
         label_operator.grid(row=1, column=0, padx=10, pady=10)
@@ -24,6 +23,15 @@ class tk_methods:
         #Displaying the result
         label_result = tk.Label(calc_window, text="The answer is: ")
         label_result.grid(row=5, column=0, columnspan=3, padx=10, pady=10)
-        #Create Input Fields
+    #Create Input Fields
+        #Input for the operation
+        input_operation = tk.Entry(calc_window)
+        input_operation.grid(row=1, column=1, padx=10, pady=10)
+        #Input for the first number
+        input_num1 = tk.Entry(calc_window)
+        input_num1.grid(row=2, column=1, padx=10, pady=10)
+        #Input for the second number
+        input_num2 = tk.Entry(calc_window)
+        input_num2.grid(row=3, column=1, padx=10, pady=10)
         #Create Buttons
 #Organize the buttons
