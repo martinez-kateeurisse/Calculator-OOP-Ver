@@ -33,5 +33,14 @@ class tk_methods:
         #Input for the second number
         input_num2 = tk.Entry(calc_window)
         input_num2.grid(row=3, column=1, padx=10, pady=10)
-        #Create Buttons
+    #Create Buttons
+        #Button for calculating the result
+        button_calculate = tk.Button(calc_window, text="Calculate the Result", command=calculator)
+        button_calculate.grid(row=4, column=1, padx=10, pady=10)
+        #Yes button - If yes, the program will repeat step 1
+        button_yes = tk.Button(calc_window, text="Yes", command=retry)
+        button_yes.grid(row=4, column=1, padx=10, pady=10)
+        #No button - If no, the calculator program will exit
+        button_no = tk.Button(calc_window, text="No", command=quit_calculator)
+        button_no.grid(row=4, column=2, padx=10, pady=10)
 #Organize the buttons
