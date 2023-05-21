@@ -19,7 +19,7 @@ class UserInterface:
     
     #Display Results
     def display_result(self, result):
-        print(result)
+        print("RESULTING VALUE: " + str(result))
     
     #Retry
     def retry_option(self):
