@@ -16,8 +16,9 @@ calc = Calculator()
 loop = LoopCondition()
 exception = Exceptions()
 
-retry = 'y'
-while loop.retry_prog(retry): 
+#Initialize 
+#retry = 'y'
+while loop.retry_prog(): 
     try: 
         ui.show_instructions()
         #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
