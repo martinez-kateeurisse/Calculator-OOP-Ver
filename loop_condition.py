@@ -1,6 +1,10 @@
 #This class file will include the codes for loop conditions.
 
 #Create class
+class LoopCondition:
 #Create Object
-#Create variable instances
-#Return value
+    def retry_prog(self, retry):
+    #Create variable instances
+        retry == 'y'        
+    #Return value
+        return retry
