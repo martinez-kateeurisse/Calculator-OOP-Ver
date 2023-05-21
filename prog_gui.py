@@ -43,4 +43,7 @@ class tk_methods:
         #No button - If no, the calculator program will exit
         button_no = tk.Button(calc_window, text="No", command=quit_calculator)
         button_no.grid(row=4, column=2, padx=10, pady=10)
-#Organize the buttons
+    #Organize the buttons
+        button_calculate.grid(row=4, column=0, pady=10)
+        button_yes.grid(row=6, column=1, pady=10)
+        button_no.grid(row=6, column=2, pady=10)
