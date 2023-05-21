@@ -1,5 +1,8 @@
 #This class file will include the exception handling codes.
 
+from user_interface import UserInterface
+ui = UserInterface
+
 #Create Class
 class Exceptions:
 #Create Object
@@ -15,5 +18,6 @@ class Exceptions:
         operators = ["addition", "subtraction", "multiplication", "division"]
         if  operation not in operators:
             print("Sorry, operation should only be addition, subtraction, multiplication, or division")
-            
+            retry = ui.retry_option()
+            return retry
     
