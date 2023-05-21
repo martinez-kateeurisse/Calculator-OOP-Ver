@@ -7,23 +7,30 @@
 #Import class files
 from user_interface import UserInterface
 from calculator import Calculator
+from loop_condition import LoopCondition
 
-#Initialize variable
+#Initialize variables
 ui = UserInterface()
 calc = Calculator()
-#Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
-operation = ui.operation_input() 
-#Ask the user for two numbers
-num1 = ui.num_input()
-num2 = ui.num_input()
+loop = LoopCondition()
 
-#Perform the operation chosen with the two numbers
-result = calc.calculations(operation, num1, num2)
-#Display the result
-ui.display_result(result)
+retry = 'y'
+while loop.retry_prog(retry): 
+    #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
+    operation = ui.operation_input() 
 
-#Ask if the user wants to try again or not.
-retry = ui.retry_option()
+    #Ask the user for two numbers
+    num1 = ui.num_input()
+    num2 = ui.num_input()
+
+    #Perform the operation chosen with the two numbers
+    result = calc.calculations(operation, num1, num2)
+
+    #Display the result
+    ui.display_result(result)
+
+    #Ask if the user wants to try again or not.
+    retry = ui.retry_option()
 #If yes, repeat Step 1.
 #If no, Display “Thank you!” and the program will exit 
 #Use Python Function and appropriate Exceptions to capture errors during runtime.
