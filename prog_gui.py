@@ -1,7 +1,7 @@
 #This python file will have the methods relating to program's tkinter execution.
 import tkinter as tk 
 #Create class
-class tk_methods:
+class TkMethods:
 #Creeate Window
     def tk_window():
         calc_window = tk.Tk()
