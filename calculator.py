@@ -6,25 +6,25 @@ class Calculator():
     #Create variable instances
     def calculations (self, operation, num1, num2):
     #If addition
-        if operation == "addition":
+        if operation == "+":
         #Perform operation
             result = num1 + num2
         #Return result
             return result
     #If subtraction
-        elif operation == "subtraction":
+        elif operation == "-":
         #Perform operation
             result = num1 - num2
         #Return result
             return result    
     #If multiplication
-        elif operation == "multiplication":
+        elif operation == "*":
         #Perform operation
             result = num1 * num2
         #Return result
             return result  
     #If division
-        elif operation == "division":
+        elif operation == "/":
         #Perform operation
             result = num1 / num2
         #Return result

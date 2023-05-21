@@ -19,6 +19,7 @@ exception = Exceptions()
 retry = 'y'
 while loop.retry_prog(retry): 
     try: 
+        ui.show_instructions()
         #Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
         operation = ui.operation_input() 
         exception.raise_error(operation)

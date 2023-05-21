@@ -3,6 +3,11 @@
 #Create class
 class UserInterface:    
 #Create objects
+    #Operation Instructions
+    def __init__(self):
+        self.intro = " Enter + if Addition \n Enter - if Subtraction \n Enter * if Multiplication \n Enter / if Division"
+    def show_instructions(self):
+        print(self.intro)    
     #Operation 
     def operation_input(self):
         #Create instance variables

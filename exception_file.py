@@ -15,9 +15,9 @@ class Exceptions:
         else:
             print("Please enter a valid input")
     def raise_error(self, operation):
-        operators = ["addition", "subtraction", "multiplication", "division"]
+        operators = ["+", "-", "*", "/"]
         if  operation not in operators:
-            print("Sorry, operation should only be addition, subtraction, multiplication, or division")
+            print("Sorry, operation should only be +, -, *, or /")
             retry = ui.retry_option()
             return retry
     
