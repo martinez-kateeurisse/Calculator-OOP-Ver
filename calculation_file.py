@@ -1,9 +1,9 @@
 #This class file will include codes that require performing calculations.
 
 #Create class file
-class Calculator:
+class Calculator():
     #Create objects
-    def calculations(self, operation, num1, num2):
+    def calculations (self, operation, num1, num2):
     #Create instances
 
     #If addition

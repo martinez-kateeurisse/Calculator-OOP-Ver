@@ -10,11 +10,12 @@ class Exceptions:
     #Create instances
         #Exception errors
         if isinstance(exception, ZeroDivisionError):
-            self.label_result.config(text="Sorry! You are dividing by zero. Try changing the second number.")
+            print("Sorry! You are dividing by zero. Try changing the second number.")
         elif isinstance(exception, ValueError):
-            self.label_result.config(text="Invalid input: Please input numbers only")
+            print("Invalid input: Please input numbers only")
         else:
-            self.label_result.config(text = "Invalid input: Please enter a valid input")
+            print("Please enter a valid input")
+    
     #Raise Value Error
     def raise_error(self, operation):
         #Initializing operator symbols
@@ -22,4 +23,8 @@ class Exceptions:
         #If statement
         if  operation not in operators:
             #Error Message
-            self.label_result.config(text="Sorry, operation should only be +, -, *, or /")
+            print("Sorry, operation should only be +, -, *, or /")
+            #Retrying program
+            retry = ui.retry_option()
+            return retry
+    
