@@ -3,7 +3,15 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 
+#from user_interface import UserInterface
+
+#ui = UserInterface
+
 class TkMethods:
+    #Opening calculator
+    def open_calculator(self):
+        self.introduction_window.destroy()  # Close the introduction window
+        self.calculator_window()
     #def __init__(self):
         #self.introduction_window = tk.Tk()    
     #Operation Instructions
@@ -65,7 +73,7 @@ class TkMethods:
         #Start the window loops
         calc_window.mainloop()
         
-    def create_ending_window():
+    def create_ending_window(self):
         # Create the ending window
         ending_window = tk.Tk()
         ending_window.title("Ending Window!") #Window title

@@ -3,7 +3,7 @@
 import tkinter as tk
 from tk_methods import TkMethods
 
-gui = TkMethods
+gui = TkMethods()
 #Create class
 class UserInterface:    
     #Create objects
@@ -44,7 +44,3 @@ class UserInterface:
         self.calc_window.destroy()  # Close the calculator window
         self.create_ending_window()
     
-    #Opening calculator
-    def open_calculator(self):
-        self.introduction_window.destroy()  # Close the introduction window
-        self.calculator_window()

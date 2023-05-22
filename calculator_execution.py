@@ -19,15 +19,7 @@ calc = Calculator()
 exception = Exceptions()
 gui = TkMethods()
 
-def open_calculator():
-    ui.open_calculator()  
-  
-#Show operation instructions
-#ui.show_instructions()
-
-#Initialize retrying variable
-#retry = 'y'
-#while loop.retry_prog(retry): 
+#Calculator window
 def calculator_window():
     def calculator():
         #Try function to test the block of codes
@@ -58,7 +50,7 @@ def calculator_window():
         ui.quit_calculator()
 
     #Call calculator window
-    gui.calculator_window
+    gui.calculator_window()
 
 #Ending window
 def ending_window():
@@ -66,6 +58,3 @@ def ending_window():
 
 #Calling introduction window
 gui.introduction_window()
-
-#Opening calculator window
-ui.open_calculator()
