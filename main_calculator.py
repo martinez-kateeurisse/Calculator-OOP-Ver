@@ -20,12 +20,14 @@ from user_interface import UserInterface
 from calculation_file import Calculator
 from loop_condition import LoopCondition
 from exception_file import Exceptions
+from prog_design import ProgramDesign
 
 #Initialize variables(modules)
 ui = UserInterface()
 calc = Calculator()
 loop = LoopCondition()
 exception = Exceptions()
+prog_design = ProgramDesign()
 
 #Show operation instructions
 ui.show_instructions()

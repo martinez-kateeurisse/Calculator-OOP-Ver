@@ -1,6 +1,5 @@
 #This file will include the program design such as the program header.
 
-import colorama
 from colorama import Back, Fore, Style 
 
 class ProgramDesign:
