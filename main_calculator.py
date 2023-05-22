@@ -26,6 +26,12 @@ prog_design = ProgramDesign()
 #Program header
 prog_design.program_header()
 
+#Displaying greetings and instructions
+ui.user_greeting()
+
+#Loading bar
+prog_design.loading_bar()
+
 #Show operation instructions
 ui.show_instructions()
 #Initialize retrying variable

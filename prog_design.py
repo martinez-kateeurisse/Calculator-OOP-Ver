@@ -14,7 +14,7 @@ class ProgramDesign:
                                     █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█"""+ Fore.LIGHTCYAN_EX,"""                      
                             █▀▀ ▄▀█ █░░ █▀▀ █░█ █░░ ▄▀█ ▀█▀ █▀█ █▀█
                             █▄▄ █▀█ █▄▄ █▄▄ █▄█ █▄▄ █▀█ ░█░ █▄█ █▀▄""")
-        print(Fore.WHITE,  "="* 35 + "Calculator Program - OOP way" + "="* 35 ,"\n")
+        print(Fore.WHITE,  "="* 35 + "Calculator Program - OOP way" + "="* 35 ,"\n\n")
 
     #Program Footer
     def program_footer(self):
@@ -44,3 +44,10 @@ class ProgramDesign:
            █▀▀█ 　 ▄█─ 　 █▀█ 　 █▀▀█ 　 ─█▀█─ 　 █▀▀ 　 ▄▀▀▄ 　 ▀▀▀█ 　 ▄▀▀▄ 　 ▄▀▀▄ 
            █▄▀█ 　 ─█─ 　 ─▄▀ 　 ──▀▄ 　 █▄▄█▄ 　 ▀▀▄ 　 █▄▄─ 　 ──█─ 　 ▄▀▀▄ 　 ▀▄▄█ 
            █▄▄█ 　 ▄█▄ 　 █▄▄ 　 █▄▄█ 　 ───█─ 　 ▄▄▀ 　 ▀▄▄▀ 　 ─▐▌─ 　 ▀▄▄▀ 　 ─▄▄▀""", "\n" +Fore.RESET)
+
+    def loading_bar(self):
+        from tqdm import tqdm
+        from time import sleep
+        print("LOADING CALCULATOR")
+        for i in tqdm(range(50)):
+            sleep(0.1)
