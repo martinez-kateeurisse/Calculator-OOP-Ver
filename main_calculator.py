@@ -10,6 +10,11 @@
 #The program will use exception handling (try-catch method) to handle user input errors.
 #The program will be executed in an Object oriented programming way 
 
+#Import color modules
+import colorama
+from colorama import Back, Fore, Style 
+colorama.init(autoreset = True)
+
 #Import class files
 from user_interface import UserInterface
 from calculation_file import Calculator
