@@ -38,11 +38,17 @@ ui.show_instructions()
 retry = 'y'
 while loop.retry_prog(retry): 
     #Try function to test the block of codes
-    try: 
+    try:
+        #Displaying operator art
+        prog_design.operators() 
+
         #Ask the user to choose one of the four math operations
         operation = ui.operation_input() 
+        #Raising Exception
         exception.raise_error(operation)
         
+        #Displaying Numbers art
+        prog_design.numbers()
         #Ask the user for two numbersa
         num1 = ui.num_input()
         num2 = ui.num_input()
