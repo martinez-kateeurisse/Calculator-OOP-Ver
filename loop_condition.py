@@ -1,5 +1,8 @@
 #This class file will include the codes for loop conditions.
 
+from prog_design import ProgramDesign
+prog_design = ProgramDesign()
+
 #Create class
 class LoopCondition:
 #Create Object
@@ -9,4 +12,4 @@ class LoopCondition:
     #Return value
             return retry
         else:
-            print("Thank you!")
+            prog_design.program_footer()

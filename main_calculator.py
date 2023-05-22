@@ -13,7 +13,7 @@
 #Import color modules
 import colorama
 from colorama import Back, Fore, Style 
-colorama.init(autoreset = True)
+#colorama.init(autoreset = True)
 
 #Import class files
 from user_interface import UserInterface
@@ -28,6 +28,9 @@ calc = Calculator()
 loop = LoopCondition()
 exception = Exceptions()
 prog_design = ProgramDesign()
+
+#Program header
+prog_design.program_header()
 
 #Show operation instructions
 ui.show_instructions()
