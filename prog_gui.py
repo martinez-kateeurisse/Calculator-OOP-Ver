@@ -12,6 +12,7 @@ class TkMethods:
         self.calc_window.title("Simple App Calculator") #Window Title
         self.calc_window.geometry("400x300") #Window Size
         self.calc_window.configure(bg="light cyan") #Window background#Create Labels
+    def labels(self):
     #Ask the user to enter the operation
         self.label_operator = tk.Label(self.calc_window, text="Operations (+, -, *, /):")
         self.label_operator.grid(row=1, column=0, padx=10, pady=10)
@@ -25,8 +26,9 @@ class TkMethods:
         self.label_retry = tk.Label(self.calc_window, text="Do you want to try again?")
         self.label_retry.grid(row = 6, column = 0, padx=10, pady=10)
         #Displaying the result
-        self.label_result = tk.Label(self.calc_window, text="The answer is: ")
+        self.label_result = tk.Label(self.calc_window, text="RESULTING VALUE: ")
         self.label_result.grid(row=5, column=0, columnspan=3, padx=10, pady=10)
+    def input_fields(self):
     #Create Input Fields
         #Input for the operation
         self.input_operation = tk.Entry(self.calc_window)
@@ -37,17 +39,22 @@ class TkMethods:
         #Input for the second number
         self.input_num2 = tk.Entry(self.calc_window)
         self.input_num2.grid(row=3, column=1, padx=10, pady=10)
+    def buttons(self):
     #Create Buttons
         #Button for calculating the result
         self.button_calculate = tk.Button(self.calc_window, text="Calculate the Result", command=calc.main_calculator)
         self.button_calculate.grid(row=4, column=1, padx=10, pady=10)
         #Yes button - If yes, the program will repeat step 1
-        self.button_yes = tk.Button(self.calc_window, text="Yes", command=loop.retry)
+        self.button_yes = tk.Button(self.calc_window, text="Yes", command=loop.retry_prog)
         self.button_yes.grid(row=4, column=1, padx=10, pady=10)
         #No button - If no, the calculator program will exit
         self.button_no = tk.Button(self.calc_window, text="No", command=loop.quit_calculator)
         self.button_no.grid(row=4, column=2, padx=10, pady=10)
+    def organize_buttons(self):
     #Organize the buttons
         self.button_calculate.grid(row=4, column=0, pady=10)
         self.button_yes.grid(row=6, column=1, pady=10)
         self.button_no.grid(row=6, column=2, pady=10)
+
+    def main_loop(self):
+        self.calc_window.mainloop() 
