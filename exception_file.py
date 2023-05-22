@@ -1,5 +1,6 @@
 #This class file will include the exception handling codes.
 
+from colorama import Back, Fore, Style 
 from user_interface import UserInterface
 ui = UserInterface
 
@@ -10,11 +11,11 @@ class Exceptions:
     #Create instances
         #Exception errors
         if isinstance(exception, ZeroDivisionError):
-            print("Sorry! You are dividing by zero. Try changing the second number.")
+            print(f"{Fore.RED}Sorry! You are dividing by zero. Try changing the second number." + Fore.RESET)
         elif isinstance(exception, ValueError):
-            print("Invalid input: Please input numbers only")
+            print(f"{Fore.RED}Invalid input: Please input numbers only" + Fore.RESET)
         else:
-            print("Please enter a valid input")
+            print(f"{Fore.RED}Please enter a valid input" + Fore.RESET)
     
     #Raise Value Error
     def raise_error(self, operation):
@@ -23,7 +24,7 @@ class Exceptions:
         #If statement
         if  operation not in operators:
             #Error Message
-            print("Sorry, operation should only be +, -, *, or /")
+            print(f"{Fore.RED}Sorry, operation should only be +, -, *, or /" + Fore.RESET)
             #Retrying program
             retry = ui.retry_option()
             return retry
