@@ -22,7 +22,7 @@ class UserInterface:
     #Numbers
     def num_input(self):
         #Ask user for numbers
-        num = float(input(f"{Fore.LIGHTGREEN_EX}Please input a number: "+Fore.RESET))
+        num = float(input(f"{Fore.LIGHTGREEN_EX}Please input a number: "+"\n" +Fore.RESET))
         #Return the value
         return num
     
