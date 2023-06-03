@@ -13,4 +13,12 @@ class UiModified(UserInterface):
         print (f"{Fore.LIGHTYELLOW_EX}RESULTING VALUE: \n" + Fore.RESET)
         print (Fore.MAGENTA,Style.BRIGHT,pyfiglet.figlet_format(str(result), font = "block"))
 
+    #Output border
+    def output_border(self, result):
+        for i in range(len(str(result))):
+            if i <= 5:
+                print(Fore.LIGHTCYAN_EX,"""██████████""", end ="""░░""")
+            else:
+                pass
+        print("\n")
 

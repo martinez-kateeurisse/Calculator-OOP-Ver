@@ -58,9 +58,14 @@ while loop.retry_prog(retry):
         #Perform the operation chosen with the two numbers
         result = calc.calculations(operation, num1, num2)
 
+        #Output border
+        ui_mod.output_border(result)
         #Display the result
         ui_mod.display_result(result)
-        
+        #Output border
+        ui_mod.output_border(result)
+
+
         #Ask if the user wants to try again or not.
         retry = ui.retry_option()
         #If yes, repeat Step 1.
@@ -68,4 +73,4 @@ while loop.retry_prog(retry):
 
     #Except function to handle errors
     except Exception as errors:
-        exception.except_condition(errors)
+        exception.except_condition(errors)   
