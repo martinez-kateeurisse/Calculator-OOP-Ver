@@ -1,3 +1,7 @@
+#Import modules
+import pyfiglet 
+from colorama import Back, Fore, Style 
+
 #Import File to be inherited
 from user_interface import UserInterface
 
