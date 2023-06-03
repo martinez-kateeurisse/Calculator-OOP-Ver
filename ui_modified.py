@@ -1,5 +1,5 @@
 #Import File to be inherited
-#Define constructor
+from user_interface import UserInterface
 
 #Create class
 #Add methods
