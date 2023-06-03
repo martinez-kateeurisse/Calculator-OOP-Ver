@@ -59,7 +59,7 @@ while loop.retry_prog(retry):
         result = calc.calculations(operation, num1, num2)
 
         #Display the result
-        ui.display_result(result)
+        ui_mod.display_result(result)
         
         #Ask if the user wants to try again or not.
         retry = ui.retry_option()
