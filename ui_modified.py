@@ -9,7 +9,9 @@ from user_interface import UserInterface
 class UiModified(UserInterface):    
 #Add methods
     def display_result(self, result):
-        print(f"{Fore.LIGHTYELLOW_EX}RESULTING VALUE: " + str(result) + Fore.RESET)
-#Return results
+        #Print result
+        print(f"{Fore.LIGHTYELLOW_EX}RESULTING VALUE: \n" + Fore.RESET)
+        print(Fore.MAGENTA,Style.BRIGHT,pyfiglet.figlet_format(result, font = "block"))
+
 
 
