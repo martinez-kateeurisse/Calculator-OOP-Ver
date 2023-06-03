@@ -7,7 +7,7 @@
 #Import color modules
 import colorama
 from colorama import Back, Fore, Style 
-#colorama.init(autoreset = True)
+import pyfiglet
 
 #Import class files
 from user_interface import UserInterface
