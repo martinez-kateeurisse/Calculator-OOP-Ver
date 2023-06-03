@@ -15,6 +15,7 @@ from calculation_file import Calculator
 from loop_condition import LoopCondition
 from exception_file import Exceptions
 from prog_design import ProgramDesign
+from ui_modified import UiModified
 
 #Initialize variables(modules)
 ui = UserInterface()
@@ -22,6 +23,7 @@ calc = Calculator()
 loop = LoopCondition()
 exception = Exceptions()
 prog_design = ProgramDesign()
+ui_mod = UiModified()
 
 #Program header
 prog_design.program_header()
