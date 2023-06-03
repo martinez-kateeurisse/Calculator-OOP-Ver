@@ -65,7 +65,6 @@ while loop.retry_prog(retry):
         #Output border
         ui_mod.output_border(result)
 
-
         #Ask if the user wants to try again or not.
         retry = ui.retry_option()
         #If yes, repeat Step 1.

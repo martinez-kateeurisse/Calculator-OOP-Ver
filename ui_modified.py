@@ -1,3 +1,5 @@
+#This file is a inheritance file of the user_interface file
+
 #Import modules
 import pyfiglet 
 from colorama import Back, Fore, Style 
@@ -21,4 +23,3 @@ class UiModified(UserInterface):
             else:
                 pass
         print("\n")
-

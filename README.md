@@ -13,6 +13,7 @@
 * This program is done in an object oriented programming way, thus, various class files are included.
 * Class files are grouped based on their functionalities.
 * In order to execute the calculator program, you have to run the main file named "main_calculator". 
+* An inheritance file was added (ui_modified.py) wherein it inherit the user_interface.py's methods
 
 ## Repository Files Instructions
 * Class files to be used when running the main calculator program include: calculation_file, exeption_file, loop_condition, prog_design, user_interface, and main_calculator.
