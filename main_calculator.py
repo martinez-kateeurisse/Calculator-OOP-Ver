@@ -37,7 +37,7 @@ ui.user_greeting()
 prog_design.loading_bar()
 
 #Show operation instructions
-ui.show_instructions()
+ui_mod.show_instructions()
 #Initialize retrying variable
 retry = 'y'
 while loop.retry_prog(retry): 
