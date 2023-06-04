@@ -24,7 +24,7 @@ class Exceptions:
         #If statement
         if  operation not in operators:
             #Error Message
-            print(f"{Fore.RED}Sorry, operation should only be +, -, *, or /" + Fore.RESET)
+            print(f"{Fore.RED}Sorry, operation should only be +, -, *, /, ^, =" + Fore.RESET)
             #Retrying program
             retry = ui.retry_option()
             return retry
