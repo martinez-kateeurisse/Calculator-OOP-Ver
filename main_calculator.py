@@ -58,7 +58,7 @@ while loop.retry_prog(retry):
         num2 = ui.num_input()
 
         #Perform the operation chosen with the two numbers
-        result = calc.calculations(operation, num1, num2)
+        result = calc_mod.calculations(operation, num1, num2)
 
         #Output border
         ui_mod.output_border(result)

@@ -20,7 +20,7 @@ class Exceptions:
     #Raise Value Error
     def raise_error(self, operation):
         #Initializing operator symbols
-        operators = ["+", "-", "*", "/"]
+        operators = ["+", "-", "*", "/", "^"]
         #If statement
         if  operation not in operators:
             #Error Message
